@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/progressbar.css">
+
+        <title>Resume cv</title>
+    </head>
+    <body>
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Joel</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="bx bx-home nav__icon"></i> Inicio
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#education" class="nav__link">
+                                <i class="bx bx-book nav__icon"></i> Formación
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="#profile" class="nav__link">
+                                <i class="bx bx-user nav__icon"></i> Perfil
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="#experience" class="nav__link">
+                                <i class="bx bx-briefcase-alt nav__icon"></i> Experiencia
+                            </a>
+                        </li>
+
+                        <!-- <li class="nav__item">
+                            <a href="#certificates" class="nav__link">
+                                <i class="bx bx-award nav__icon"></i> Certificates
+                            </a>
+                        </li> -->
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="bx bx-receipt nav__icon"></i> Habilidades
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#references" class="nav__link">
+                                <i class="bx bx-link-external nav__icon"></i> Referencias
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="nav__toogle" id="nav-toggle">
+                    <i class="bx bx-grid-alt"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main bd-container">
+            <!-- All elements within this div, is generated in PDF -->
+            <div class="resume" id="area-cv">
+                <div class="resume__left">
+                    <!--========== HOME ==========-->
+                    <section class="home" id="home">
+                        <div class="home__container section bd-grid">
+                            <div class="home__data bd-grid">
+                                <img src="assets/img/profile.png" alt="Profile pic" class="home__img">
+                                <h1 class="home__title">JOEL <b>SANCHEZ</b></h1>
+                                <h3 class="home__profession">Web Designer</h3>
+                                <!-- Button to generate and download the pdf. Available for desktop. -->
+                                <div>
+                                    <a download href="assets/pdf/ResumeCv.pdf" class="home__button-movil">Download</a>
+                                </div>
+                            </div>
+                            <div class="home__address bd-grid">
+                                <span class="home__information">
+                                    <i class="bx bx-map home__icon"></i> C.19A Diag x 68B #571 Mérida, Yucatán, México
+                                </span>
+                                <span class="home__information">
+                                    <a href="mailto:joel.sanchez.ramirez10@gmail.com" class="home__link"><i class="bx bx-envelope home__icon"></i> joel.sanchez.ramirez10@gmail.com</a>
+                                </span>
+                                <span class="home__information">
+                                    <i class="bx bx-phone home__icon"></i> +52 (999)-902-23-56
+                                </span>
+                            </div>
+                        </div>
+                        <!-- Theme change button -->
+                        <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
+                        <i class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>
+                    </section>          
+                    
+                    <!--========== SOCIAL ==========-->
+                    <section class="social section">
+                        <h2 class="section-title">Social networks</h2>
+                        <div class="social__container bd-grid">
+                            <a href="https://joelsanram.github.io/PortafolioJoel" target="_blank" class="social__link">
+                                <i class='bx bxs-briefcase social__icon'></i> Joel Sánchez
+                            </a>
+                            <a href="https://www.facebook.com/joelsanchezbell" target="_blank" class="social__link">
+                                <i class="bx bxl-facebook social__icon"></i> Joel Sánchez
+                            </a>
+                            <a href="https://twitter.com/_Yoara_" target="_blank" class="social__link">
+                                <i class='bx bxl-twitter social__icon'></i> Joel Sánchez
+                            </a>
+                            <a href="https://github.com/JoelSanRam" target="_blank" class="social__link">
+                                <i class='bx bxl-github social__icon'></i> Joel Sánchez
+                            </a>
+                        </div>
+                    </section>
+                    
+                    <!--========== EDUCATION ==========-->
+                    <section class="education section" id="education">
+                        <h2 class="section-title">Training</h2>
+                        <div class="education__container bd-grid">
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <span class="education__line"></span>
+                                </div>
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">Técnico Superior Universitario en Tecnologías de la Información y Comunicación área Sistemas Informáticos</h3>
+                                    <span class="education__studies">Universidad Tecnológica Metropolitana</span>
+                                    <span class="education__year">2017 - 2019</span>
+                                </div>
+                            </div>
+                            <div class="education__content">
+                                <div class="education__time">
+                                    <span class="education__rounder"></span>
+                                    <!-- <span class="education__line"></span> -->
+                                </div>
+                                <div class="education__data bd-grid">
+                                    <h3 class="education__title">Ingeniero en Tecnologías de la Información</h3>
+                                    <span class="education__studies">Universidad Tecnológica Metropolitana</span>
+                                    <span class="education__year">2019 - 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!--========== LANGUAGES ==========-->
+                    <section class="languages section">
+                        <h2 class="section-title">Languages</h2>
+                        <ul class="languages__content bd-grid">
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> Spanish
+                            </li>
+                            <li class="languages__name">
+                                <span class="languages__circle"></span> English
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <div class="resume__right">
+                    <!--========== PROFILE ==========-->
+                    <section class="profile section" id="profile">
+                        <h2 class="section-title">Profile</h2>
+                        
+                        <p class="profile__description">
+                            Graduated in Information Technology Engineering, focused on web design, with knowledge in UX / UI, frontend development, photoshop, adobe XD, Figma, Illustrator, product design, non-expert, but able to adapt to various circumstances and technologies.
+                        </p>
+                    </section>
+                    
+                    <!--========== EXPERIENCE ==========-->
+                    <section class="experience section" id="experience">
+                        <h2 class="section-title">Experience</h2>
+
+                        <div class="experience__container bd-grid">
+                            <!-- BEGIN EXPERIENCE CONTENT -->
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">Software depelopment</h3>
+                                    <span class="experience__company">May 2019 – August 2019 | Secretaría Técnica de Planeación y Evaluación</span>
+                                    <span class="experience__description">
+                                        Developer in charge of creating a system for evaluating the performance of different government ministries, known as the “Sistema Informático de Evaluación del Desempeño”.
+                                        <br>
+                                        Completed tasks:
+                                        <ul>
+                                            <li>
+                                                Activity 1. Database analysis, management and optimization
+                                            </li>
+                                            <li>
+                                                Activity 2. Development of functional modules of the system.
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- END EXPERIENCE CONTENT -->
+                            <!-- BEGIN EXPERIENCE CONTENT -->
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <!-- <span class="experience__line"></span> -->
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">Software desinger</h3>
+                                    <span class="experience__company">from September 2020 to Present | Búho Solutions</span>
+                                    <span class="experience__description">
+                                        Web application development with Laravel, creating wireframes, views and modeling the database through migrations and Eloquent, making responsive websites.
+                                         Version control through Git and GitHub.
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- END EXPERIENCE CONTENT -->
+                        </div>
+                    </section>
+
+                    <!--========== CERTIFICATES ==========-->
+                    <!-- <section class="certificate section" id="certificates">
+                        <h2 class="section-title">Certificates</h2>
+                        <div class="certificate__container bd-grid">
+                            <div class="certificate__content">
+                                <h3 class="certificate__title">Certified for compliance in the work area (2012)</h3>
+                                <p class="certificate__description">
+                                    For meeting the expectations of leading the team to work the specified tasks in the labor field.
+                                </p>
+                            </div>
+                            <div class="certificate__content">
+                                <h3 class="certificate__title">Certificate of attendance on computer technology.</h3>
+                                <p class="certificate__description">
+                                    For meeting the expectations of leading the team to work the specified tasks in the labor field.
+                                </p>
+                            </div>
+                            <div class="certificate__content">
+                                <h3 class="certificate__title">Achievement medal for productivity excellence during the year (2019)</h3>
+                                <p class="certificate__description">
+                                    For meeting the expectations of leading the team to work the specified tasks in the labor field.
+                                </p>
+                            </div>
+                        </div>
+                    </section> -->
+
+                    <!--========== SKILLS  ==========-->
+                    <section class="skills section" id="skills">
+                        <h2 class="section-title">Skills</h2>
+                        <div class="skills__content bd-grid">
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    JavaScript
+                                    <div class="pb-border"><div class="pb-green" style="width: 55%"></div></div>
+                                </li>
+                                <li class="skills__name">
+                                    User Research
+                                    <div class="pb-border"><div class="pb-green" style="width: 50%"></div></div>
+                                </li>
+                                <li class="skills__name">
+                                    HTML
+                                    <div class="pb-border"><div class="pb-green" style="width: 90%"></div></div>
+                                </li>
+                            </ul>
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    CSS
+                                    <div class="pb-border"><div class="pb-green" style="width: 85%"></div></div>
+                                </li>
+                                <li class="skills__name">
+                                    Photoshop
+                                    <div class="pb-border"><div class="pb-green" style="width: 65%"></div></div>
+                                </li>
+                                <li class="skills__name">
+                                    Laravel
+                                    <div class="pb-border"><div class="pb-green" style="width: 75%"></div></div>
+                                </li>
+                            </ul>
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    Bootstrap
+                                    <div class="pb-border"><div class="pb-green" style="width: 70%"></div></div>
+                                </li>
+                                <li class="skills__name">
+                                    ReactJs
+                                    <div class="pb-border"><div class="pb-green" style="width: 65%"></div></div>
+                                </li>
+                                <li class="skills__name">
+                                    Git
+                                    <div class="pb-border"><div class="pb-green" style="width: 60%"></div></div>
+                                </li>
+                                <li class="skills__name">
+                                    Adobe XD
+                                    <div class="pb-border"><div class="pb-green" style="width: 70%"></div></div>
+                                </li>
+                            </ul>
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    Figma
+                                    <div class="pb-border"><div class="pb-green" style="width: 60%"></div></div>
+                                </li>
+                                <li class="skills__name">
+                                    MySQL
+                                    <div class="pb-border"><div class="pb-green" style="width: 60%"></div></div>
+                                </li>
+                                <li class="skills__name">
+                                    UX / UI
+                                    <div class="pb-border"><div class="pb-green" style="width: 70%"></div></div>
+                                </li>
+                                <li class="skills__name">
+                                    Ilustrator
+                                    <div class="pb-border"><div class="pb-green" style="width: 30%"></div></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!--========== REFERENCES ==========-->
+                    <section class="references section" id="references">
+                        <h2 class="section-title">References</h2>
+                        <div class="references__container bd-grid">
+                            <div class="references__content bd-grid">
+                                <span class="references__subtitle">Engineer.</span>
+                                <h3 class="references__title">Joel Sánchez</h3>
+                                <ul class="references__contact">
+                                    <li>Phone: (999)-138-8748</li>
+                                    <!-- <li>Correo: clay@doe.com</li> -->
+                                </ul>
+                            </div>
+                            <div class="references__content bd-grid">
+                                <span class="references__subtitle">Engineer.</span>
+                                <h3 class="references__title">Omar García</h3>
+                                <ul class="references__contact">
+                                    <li>Phone: (999)-390-1719</li>
+                                    <!-- <li>Correo: clay@doe.com</li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <!--========== INTERESTS ==========-->
+                    <!-- <section class="interests section">
+                        <h2 class="section-title">Intereses</h2>
+                        <div class="interests__container bd-grid">
+                            <div class="interests__content">
+                                <i class="bx bx-headphone interests__icon"></i>
+                                <span class="interests__name">Música</span>
+                            </div>
+                            <div class="interests__content">
+                                <i class="bx bxs-plane-alt interests__icon"></i>
+                                <span class="interests__name">Viajes</span>
+                            </div>
+                            <div class="interests__content">
+                                <i class="bx bx-book interests__icon"></i>
+                                <span class="interests__name">Lectura</span>
+                            </div>
+                            <div class="interests__content">
+                                <i class="bx bx-game interests__icon"></i>
+                                <span class="interests__name">Videojuegos</span>
+                            </div>
+                        </div>
+                    </section> -->
+                </div>
+            </div>        
+        </main>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+        </a>
+
+        <!--========== HTML2PDF ==========-->
+        <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

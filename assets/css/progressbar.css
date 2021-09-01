@@ -1,0 +1,27 @@
+.pb-border{
+    border:1px solid #ccc!important;
+    width: 50%;
+    display: block;
+    box-sizing: border-box;
+    margin-left: 4px;
+    border-spacing: 0;
+}
+
+.pb-green, .pb-green:hover {
+    color:#fff!important;
+    background-color:#4CAF50!important;
+    padding-left: 4px;
+    height: 15px;
+    font-size: 10px;
+    color: #fff!important;
+}
+
+.scale-cv .pb-border {
+    width: 60%;
+}
+
+@media screen and (max-width: 968px){
+    .pb-border {
+        width: 80%;
+    }
+}
